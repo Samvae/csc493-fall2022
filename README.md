@@ -9,9 +9,12 @@ Python IDE: Ensure you have a Python Integrated Development Environment (IDE) in
 
 Python Libraries:
 *These can be installed using:*
-- numpy: pip install numpy
-- OpenCV (cv2): pip install opencv-python
-- matplotlib: pip install matplotlib
+- numpy: 
+`pip install numpy`
+- OpenCV (cv2): 
+`pip install opencv-python`
+- matplotlib: 
+`pip install matplotlib`
 
 
 ## Built With
@@ -26,11 +29,11 @@ A Algorithm*: The A* algorithm is employed for pathfinding and image partitionin
 
 ## Author
 
-- **Sam Villahermosa**: *Star Splitter : Image Partitioning with A* for Astrophotography* [LinkedIn](https://www.linkedin.com/in/samvillahermosa/)
+- **Sam Villahermosa**: Star Splitter : Image Partitioning with A* for Astrophotography [LinkedIn](https://www.linkedin.com/in/samvillahermosa/)
 
 ## Acknowledgments
 
-- [GeeksforGeeks](https://www.geeksforgeeks.org/a-search-algorithm/)
+- [GeeksforGeeks - A* Algorithm](https://www.geeksforgeeks.org/a-search-algorithm/)
 - Professor Deanna M. Wilborne 
 - Berea College
 
