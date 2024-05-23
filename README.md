@@ -21,11 +21,11 @@ Python Libraries:
 
 Star Splitter: Image partitioning with A* for Astrophotography was built using the following frameworks and libraries:
 
-PyCharm: The project is written in Python programming language.
-numpy: Used for numerical computing and array manipulation in Python.
-OpenCV (cv2): OpenCV is a computer vision library used for image processing tasks.
-matplotlib: Matplotlib is a plotting library for Python, used for visualizing image segmentation results.
-A Algorithm*: The A* algorithm is employed for pathfinding and image partitioning.
+- PyCharm: The project is written in Python programming language.
+- numpy: Used for numerical computing and array manipulation in Python.
+- OpenCV (cv2): A computer vision library used for image processing tasks.
+- matplotlib: A plotting library for Python, used for visualizing image segmentation results.
+- A Algorithm*: The A* algorithm is employed for pathfinding and image partitioning.
 
 ## Author
 
