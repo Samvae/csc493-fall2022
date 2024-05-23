@@ -3,14 +3,17 @@
 
 Star Splitter will utilize the A* algorithm, a pathfinding algorithm known for its efficiency and effectiveness in traversing graphs, to create paths for dividing astrophotography images into meaningful segments. The GUI will allow users to interactively define segmentation parameters, such as brightness thresholds or region of interest markers, and visualize the segmentation process in real-time. Additionally, users will have the flexibility to customize the partitioning algorithm's parameters to suit their specific analysis needs.
 
+## Project Concept
+[Click here to read the project concept](/concept.md)
+
+
 ### Prerequisites
 
 Python IDE: Ensure you have a Python Integrated Development Environment (IDE) installed on your system. Popular choices include PyCharm, Visual Studio Code, or Jupyter Notebook.
 
 Python Libraries:
 *These can be installed using:*
-- numpy: 
-`pip install numpy`
+- numpy: `pip install numpy`
 - OpenCV (cv2): 
 `pip install opencv-python`
 - matplotlib: 
