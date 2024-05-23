@@ -26,11 +26,11 @@ A Algorithm*: The A* algorithm is employed for pathfinding and image partitionin
 
 ## Author
 
-- **Sam Villahermosa**: *Star Splitter : Image Partitioning with A* for Astrophotography* [yourLinkedIn or yourGithub profile](https://www.linkedin.com/in/samvillahermosa/)
+- **Sam Villahermosa**: *Star Splitter : Image Partitioning with A* for Astrophotography* [LinkedIn](https://www.linkedin.com/in/samvillahermosa/)
 
 ## Acknowledgments
 
-- [GeeksforGeeks] (https://www.geeksforgeeks.org/a-search-algorithm/)
+- [GeeksforGeeks](https://www.geeksforgeeks.org/a-search-algorithm/)
 - Professor Deanna M. Wilborne 
 - Berea College
 
