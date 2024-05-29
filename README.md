@@ -6,6 +6,15 @@ Star Splitter will utilize the A* algorithm, a pathfinding algorithm known for i
 ## Project Concept
 [Click here to read the project concept](/concept.md)
 
+## Scope
+
+The scope of Star Splitter includes developing a user-friendly tool for segmenting astrophotography images using the A* algorithm. Major features will include a graphical user interface (GUI) for interactive image partitioning, real-time visualization of segmentation results, customizable segmentation parameters, and export functionality for segmented images. Out of scope for this project are segmentation beyond splitting images, machine learning integration, object identifier, and 3D visualization. These out-of-scope features may be considered for future development but will not be included in the initial project.
+
+
+## Vision
+
+Star Splitter aims to improve the analysis of astrophotography images by providing an intuitive tool for image partitioning. This tool will enable astronomers and enthusiasts to easily segment and explore celestial objects in their images, leading to faster data analysis and the potential for new discoveries. By the project's completion, users will have a reliable and user-friendly application that enhances their ability to study the night sky, making advanced image analysis accessible to a broader audience.
+
 
 ### Prerequisites
 
@@ -18,6 +27,10 @@ Python Libraries:
 `pip install opencv-python`
 - matplotlib: 
 `pip install matplotlib`
+
+## Requirements
+
+[Click here to see the requirements](/requirements.md)
 
 
 ## Built With
