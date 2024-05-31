@@ -61,7 +61,7 @@
 ## Number: NFR3
 - **Statement:** The software should provide fast and efficient image partitioning, processing images within a reasonable time frame.
 - **Evaluation Method:** Measure the processing time for segmenting different sizes and types of images.
-- **Dependency:** FR1, FR3
+- **Dependency:** FR1, FR4
 - **Priority:** High
 - **Requirement Revision History:** 
     - [Initial creation: 2024-05-28]
