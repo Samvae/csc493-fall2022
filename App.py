@@ -276,7 +276,6 @@ class App(customtkinter.CTk):
         original_image = np.copy(image)
 
         if self.mask:
-            # Differential Brightness Masking
             mask = np.all(original_image == [0, 0, 0], axis=2).astype(np.uint8) * 255
             inpainted_image = cv2.inpaint(original_image, mask, 3, cv2.INPAINT_NS)
             blurred_image = cv2.GaussianBlur(inpainted_image, (15, 15), 0)
@@ -285,18 +284,18 @@ class App(customtkinter.CTk):
             for y in range(original_image.shape[0]):
                 for x in range(original_image.shape[1]):
                     if np.all(blurred_image[y, x] <= original_image[y, x]):
-                        mask[y, x] = [255, 255, 255]  # White for blocked
+                        mask[y, x] = [255, 255, 255]
                     else:
-                        mask[y, x] = [0, 0, 0]  # Black for unblocked
+                        mask[y, x] = [0, 0, 0]
         else:
             mask = np.array(original_image)
 
         all_paths = []
         for offset, direction in self.paths:
             if direction.lower() == 'vertical':
-                self.pathfinding.set_start_end(mask.shape, offset)
+                self.pathfinding.set_start_end(mask.shape[:2], offset, direction.lower())
             elif direction.lower() == 'horizontal':
-                self.pathfinding.set_start_end(mask.shape, offset)
+                self.pathfinding.set_start_end(mask.shape[:2], offset, direction.lower())
             else:
                 raise ValueError("Invalid direction: choose 'Vertical' or 'Horizontal'")
 
@@ -304,21 +303,21 @@ class App(customtkinter.CTk):
             if path:
                 all_paths.extend(path)
             else:
-                tkinter.messagebox.showerror("Error", f"No valid path found for direction {direction} and offset {offset}.")
+                tkinter.messagebox.showerror("Error",
+                                             f"No valid path found for direction {direction} and offset {offset}.")
                 return
 
         self.figure.clear()
         ax = self.figure.add_subplot(111)
         ax.tick_params(colors='black', which='both')
         img_size = max(mask.shape)
-        interval = max(1, 1000 // img_size)  # Scale speed based on image size
+        interval = max(1, 1000 // img_size)
         img_display = ax.imshow(image[1:-1, 1:-1])
 
         def update(frame):
-            if frame < len(all_paths):
-                pos = all_paths[frame]
-                original_image[pos[0]][pos[1]] = [255, 0, 0]
-                img_display.set_data(original_image[1:-1, 1:-1])
+            pos = all_paths[frame]
+            original_image[pos[0]][pos[1]] = [255, 0, 0]
+            img_display.set_data(original_image[1:-1, 1:-1])
             return [img_display]
 
         ani = FuncAnimation(self.figure, update, frames=len(all_paths), interval=interval, blit=True)

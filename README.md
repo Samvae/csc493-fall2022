@@ -32,6 +32,9 @@ Python Libraries:
 
 [Click here to see the requirements](/requirements.md)
 
+## Design
+[Click here to see the design specifications](/design.md)
+
 
 ## Built With
 
