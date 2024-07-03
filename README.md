@@ -35,6 +35,9 @@ Python Libraries:
 ## Design
 [Click here to see the design specifications](/design.md)
 
+## Test Plan
+[Click here to see the test plan document](/test.plan.md)
+
 
 ## Built With
 
@@ -50,6 +53,7 @@ Star Splitter: Image partitioning with A* for Astrophotography was built using t
 
 - **Sam Villahermosa**: Star Splitter : Image Partitioning with A* for Astrophotography [LinkedIn](https://www.linkedin.com/in/samvillahermosa/)
 
+
 ## Acknowledgments
 
 - [GeeksforGeeks - A* Algorithm](https://www.geeksforgeeks.org/a-search-algorithm/)
@@ -60,3 +64,5 @@ Star Splitter: Image partitioning with A* for Astrophotography was built using t
 
 This project is licensed under the ??? License - see the wiki page (https://en.wikipedia.org/wiki/Software_license) for details
 
+## Installation and Use Guide
+[Click here to see the installation guide](/installation.md)
