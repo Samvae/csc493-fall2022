@@ -61,8 +61,6 @@ A dedicated coder and lifelong learner, Sam is motivated by the opportunity to c
 
 In addition to programming, Sam enjoys exploring new technologies, reading, and spending time with friends and family. With a proactive approach to challenges and a collaborative spirit, Sam strives to contribute positively to every project and team environment.
 
- 
-
 
 ## Acknowledgments
 
