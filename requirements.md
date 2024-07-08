@@ -20,7 +20,7 @@
     - [Revised : 2024-05-31] - provide functionality for saving and sharing segmented images
 
 ## Number: FR3
-- **Statement:** The software must allow users to customize segmentation parameters, such as brightness thresholds and region of interest markers.
+- **Statement:** The software must allow users to customize segmentation parameters, such as brightness thresholds.
 - **Evaluation Method:** Test the customization options in the GUI with different input parameters.
 - **Dependency:** FR1
 - **Priority:** High
