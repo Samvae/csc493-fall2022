@@ -51,7 +51,17 @@ Star Splitter: Image partitioning with A* for Astrophotography was built using t
 
 ## Author
 
-- **Sam Villahermosa**: Star Splitter : Image Partitioning with A* for Astrophotography [LinkedIn](https://www.linkedin.com/in/samvillahermosa/)
+**Sam Villahermosa**: Star Splitter : Image Partitioning with A* for Astrophotography [LinkedIn](https://www.linkedin.com/in/samvillahermosa/)
+
+#### About the Lead Developer: 
+
+Sam is an upcoming senior at Berea College, pursuing a degree in Computer Science. With a passion for both physical and mental well-being, Sam enjoys balancing academic pursuits with outdoor activities and fitness. 
+
+A dedicated coder and lifelong learner, Sam is motivated by the opportunity to create impactful solutions that enhance society's quality of life, whether through entertainment or practical applications. With an interest in software development, Sam is committed to continuous growth and innovation in the field.
+
+In addition to programming, Sam enjoys exploring new technologies, reading, and spending time with friends and family. With a proactive approach to challenges and a collaborative spirit, Sam strives to contribute positively to every project and team environment.
+
+ 
 
 
 ## Acknowledgments
