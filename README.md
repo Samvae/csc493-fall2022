@@ -1,7 +1,7 @@
 # Star Splitter : Image Partitioning with A* for Astrophotography
 ## Description/Motivation
 
-Star Splitter will utilize the A* algorithm, a pathfinding algorithm known for its efficiency and effectiveness in traversing graphs, to create paths for dividing astrophotography images into meaningful segments. The GUI will allow users to interactively define segmentation parameters, such as brightness thresholds or region of interest markers, and visualize the segmentation process in real-time. Additionally, users will have the flexibility to customize the partitioning algorithm's parameters to suit their specific analysis needs.
+Star Splitter will utilize the A* algorithm, a pathfinding algorithm known for its efficiency and effectiveness in traversing graphs, to create paths for dividing astrophotography images into meaningful segments. The GUI will allow users to interactively define segmentation parameters, such as brightness thresholds, and visualize the segmentation process in real-time. Additionally, users will have the flexibility to customize the partitioning algorithm's parameters to suit their specific analysis needs.
 
 ## Project Concept
 [Click here to read the project concept](/concept.md)
