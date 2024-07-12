@@ -78,7 +78,8 @@ class App(customtkinter.CTk):
         self.scrollable_frame = customtkinter.CTkScrollableFrame(self.tabview.tab("Current"))
         self.scrollable_frame.grid(row=1, column=0, padx=0, pady=4, sticky="nsew")
 
-        self.current_threshold_label = customtkinter.CTkLabel(self.scrollable_frame, text="Threshold:  " + str(self.threshold))
+        self.current_threshold_label = customtkinter.CTkLabel(self.scrollable_frame,
+                                                              text="Threshold:  " + str(self.threshold))
         self.current_threshold_label.grid(row=0, column=0, padx=(30, 20), pady=(20, 10), sticky="w")
 
         self.current_paths_label = customtkinter.CTkLabel(self.scrollable_frame, text="Paths:")
@@ -110,19 +111,26 @@ class App(customtkinter.CTk):
         self.path_label.grid(row=0, column=0, padx=20, pady=10)
         self.entry_offset = customtkinter.CTkEntry(self.tabview.tab("Paths"), placeholder_text="Offset Starts at 0")
         self.entry_offset.grid(row=1, column=0, padx=(20, 20), pady=(10, 10), sticky="nsew")
-        self.option_menu = customtkinter.CTkOptionMenu(self.tabview.tab("Paths"), values=['Vertical', 'Horizontal'], command=self.update_placeholder)
+        self.option_menu = customtkinter.CTkOptionMenu(self.tabview.tab("Paths"), values=['Vertical', 'Horizontal'],
+                                                       command=self.update_placeholder)
         self.option_menu.grid(row=2, column=0, padx=20, pady=(10, 10))
         self.save_path_button = customtkinter.CTkButton(self.tabview.tab("Paths"), fg_color="transparent",
                                                         border_width=2, text="Save", text_color=("gray10", "#DCE4EE"),
                                                         command=self.save_path)
         self.save_path_button.grid(row=3, column=0, padx=(20, 20), pady=24, sticky="nsew")
 
-        self.checkbox_1 = customtkinter.CTkCheckBox(self.tabview.tab("Settings"), text='Animate', command=self.toggle_animate)
+        self.checkbox_1 = customtkinter.CTkCheckBox(self.tabview.tab("Settings"), text='Animate',
+                                                    command=self.toggle_animate)
         self.checkbox_1.grid(row=1, column=0, padx=20, pady=25, sticky="w")
         self.checkbox_2 = customtkinter.CTkCheckBox(self.tabview.tab("Settings"), text='Mask', command=self.toggle_mask)
         self.checkbox_2.grid(row=0, column=0, padx=20, pady=25, sticky="w")
-        self.checkbox_3 = customtkinter.CTkCheckBox(self.tabview.tab("Settings"), text='Iterate', command=self.open_input_dialog_event)
-        self.checkbox_3.grid(row=2, column=0, padx=20, pady=25.5, sticky="w")
+        self.entry_iterate = customtkinter.CTkEntry(self.tabview.tab("Settings"), placeholder_text="", width=80)
+        self.entry_iterate.grid(row=2, column=0, padx=(20, 0), pady=24, sticky="w")
+        self.save_iterate_button = customtkinter.CTkButton(self.tabview.tab("Settings"),
+                                                           width=80,
+                                                           border_width=2, text="Iterate",
+                                                           command=self.get_iteration)
+        self.save_iterate_button.grid(row=2, column=0, padx=(0, 20), pady=24, sticky='e')
 
         self.select_image_button = customtkinter.CTkButton(self.sidebar_frame, text='Select Image',
                                                            command=self.select_image)
@@ -335,14 +343,15 @@ class App(customtkinter.CTk):
             if image is not None:
                 if value == 'Vertical':
                     self.entry_offset.configure(
-                        placeholder_text="Min: " + str(0 - (image.shape[1] // 2)) + " | Max: " + str(image.shape[1] // 2))
+                        placeholder_text="Min: " + str(0 - (image.shape[1] // 2)) + " | Max: " + str(
+                            image.shape[1] // 2))
                 elif value == 'Horizontal':
                     self.entry_offset.configure(
-                        placeholder_text="Min: " + str(0 - (image.shape[0] // 2)) + " | Max: " + str(image.shape[0] // 2))
+                        placeholder_text="Min: " + str(0 - (image.shape[0] // 2)) + " | Max: " + str(
+                            image.shape[0] // 2))
 
-    def open_input_dialog_event(self):
-        dialog = customtkinter.CTkInputDialog(text="Enter the number of iterations:", title="Iterate")
-        iteration_input = dialog.get_input()
+    def get_iteration(self):
+        iteration_input = self.entry_iterate.get()
         try:
             iteration_count = int(iteration_input)
             if iteration_count > 0:
