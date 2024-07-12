@@ -22,11 +22,12 @@ Python IDE: Ensure you have a Python Integrated Development Environment (IDE) in
 
 Python Libraries:
 *These can be installed using:*
+- tkinter (usually included with Python installations)
+- customtkinter: `pip install customtkinter`
+- matplotlib: `pip install matplotlib`
 - numpy: `pip install numpy`
-- OpenCV (cv2): 
-`pip install opencv-python`
-- matplotlib: 
-`pip install matplotlib`
+- OpenCV (cv2): `pip install opencv-python`
+- aStar: (Assuming this is your custom library, provide installation instructions if applicable)
 
 ## Requirements
 
@@ -43,11 +44,15 @@ Python Libraries:
 
 Star Splitter: Image partitioning with A* for Astrophotography was built using the following frameworks and libraries:
 
-- PyCharm: The project is written in Python programming language.
-- numpy: Used for numerical computing and array manipulation in Python.
-- OpenCV (cv2): A computer vision library used for image processing tasks.
-- matplotlib: A plotting library for Python, used for visualizing image segmentation results.
-- A Algorithm*: The A* algorithm is employed for pathfinding and image partitioning.
+- **tkinter**: Standard Python interface to the Tk GUI toolkit, used for creating the graphical user interface.
+- **customtkinter**: A modern and customizable version of tkinter.
+- **matplotlib**: A plotting library for Python, used for visualizing image segmentation results.
+- **numpy**: Used for numerical computing and array manipulation in Python.
+- **OpenCV (cv2)**: A computer vision library used for image processing tasks.
+- **AStarPathfinding**: A custom implementation of the A* algorithm for pathfinding and image partitioning.
+- **matplotlib.animation**: Used for creating animations in matplotlib.
+- **FigureCanvasTkAgg**: A matplotlib backend that embeds matplotlib plots into Tkinter applications.
+- **NavigationToolbar2Tk**: A matplotlib toolbar that integrates with Tkinter.
 
 ## Author
 
@@ -65,12 +70,36 @@ In addition to programming, Sam enjoys exploring new technologies, reading, and 
 ## Acknowledgments
 
 - [GeeksforGeeks - A* Algorithm](https://www.geeksforgeeks.org/a-search-algorithm/)
+- [GeeksforGeeks - OpenCV ](https://www.geeksforgeeks.org/opencv-python-tutorial/)
+- [OpenCV Documentation](https://docs.opencv.org/4.x/d6/d00/tutorial_py_root.html)
+- [Matplotlib Documentation](https://matplotlib.org/stable/index.html)
 - Professor Deanna M. Wilborne 
 - Berea College
 
-## License (not required initially)
 
-This project is licensed under the ??? License - see the wiki page (https://en.wikipedia.org/wiki/Software_license) for details
+## License
+
+MIT License
+
+Copyright (c) 2024 Sam Villahermosa
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 
 ## Installation and Use Guide
 [Click here to see the installation guide](/installation.md)
