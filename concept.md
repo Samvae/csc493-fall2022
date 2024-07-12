@@ -46,8 +46,3 @@ The success of Star Splitter will be measured based on the following criteria:
 ## Motivation
 
 The primary motivation for choosing this project is the opportunity to contribute to the field of astronomy and make a meaningful impact on the accessibility and usability of tools for astrophotography analysis. By developing Star Splitter, I hope to provide astronomers and those interested with a resource for studying stars in space. Additionally, I believe that working on this project will enhance my skills in software development, image processing, and user interface design, ultimately benefiting my career development in the field of technology and scientific research.
-
-
-## Future Extensions
-
-## Other (optional)
